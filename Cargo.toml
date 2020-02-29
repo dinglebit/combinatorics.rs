@@ -1,5 +1,6 @@
 [package]
 name = "icub3d_combinatorics"
+description = "A collection of combinatorics utilities."
 license = "MIT"
 license-file = "LICENSE"
 version = "0.1.0"
