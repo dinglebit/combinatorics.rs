@@ -1,12 +1,10 @@
-//! # icub3d Combinatorics
+//! # Dinglebit Combinatorics
 //!
-//! `icub3d_combinatorics` is a collection of
+//! `dinglebit_combinatorics` is a collection of
 //! [combinatoric](https://en.wikipedia.org/wiki/Combinatorics)
 //! utilities. It is not currently full featured as I'm only adding
 //! functionality that I need. Pull requests are always welcome
 //! though!
-
-#![crate_name = "icub3d_combinatorics"]
 
 use std::iter::Iterator;
 
@@ -15,7 +13,7 @@ use std::iter::Iterator;
 /// # Example
 ///
 /// ```
-/// # use icub3d_combinatorics::Permutation;
+/// # use dinglebit_combinatorics::Permutation;
 /// let mut pp = Vec::new();
 /// for p in Permutation::new(3) {
 ///     pp.push(p);
@@ -43,7 +41,7 @@ use std::iter::Iterator;
 /// Consider permuting a set of letters:
 ///
 /// ```
-/// # use icub3d_combinatorics::Permutation;
+/// # use dinglebit_combinatorics::Permutation;
 /// let letters = vec!['a', 'b', 'c'];
 /// let mut pp = Vec::new();
 /// for p in Permutation::new(3) {
@@ -126,7 +124,7 @@ impl Iterator for Permutation {
 /// # Example
 ///
 /// ```
-/// # use icub3d_combinatorics::Combination;
+/// # use dinglebit_combinatorics::Combination;
 /// let mut cc = Vec::new();
 /// for c in Combination::new(3, 2) {
 ///     cc.push(c);
@@ -151,7 +149,7 @@ impl Iterator for Permutation {
 /// Consider combinations of a set of letters:
 ///
 /// ```
-/// # use icub3d_combinatorics::Combination;
+/// # use dinglebit_combinatorics::Combination;
 /// let letters = vec!['a', 'b', 'c'];
 /// let mut cc = Vec::new();
 /// for c in Combination::new(3, 2) {
